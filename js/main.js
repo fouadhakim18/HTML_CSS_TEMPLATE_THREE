@@ -146,10 +146,12 @@ let skills = document.querySelector(".skills");
 let skillsContainer = document.querySelector(".skills .container");
 
 window.onscroll = function () {
+
   if (window.pageYOffset >= 400) {
     options.style.opacity = "1";
     options.style.right = "5px";
   }
+  
   let skillsTop = skills.offsetTop; // the height of all content before skills
   let skillsContainerHeight = skillsContainer.offsetHeight; // the height of the container
   let windowHeight = this.innerHeight; // height of window

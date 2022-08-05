@@ -18,8 +18,37 @@
     />
   </head>
   <body>
+    <!-- start settings  -->
+    <div class="settings">
+      <div class="sets-div">
+        <i class="fa-solid fa-gear sets"></i>
+      </div>
+      <div class="settings-container">
+        <div class="box">
+          <h2>Colors</h2>
+          <ul>
+            <li class="active" data-color="#2196f3"></li>
+            <li data-color="#F00"></li>
+            <li data-color="#ffa319"></li>
+            <li data-color="#0bc9b6"></li>
+            <li data-color="#6b05e0"></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Navigation Bullets</h2>
+          <div class="choice">
+            <span class="active Yes">Yes</span>
+            <span class="No">No</span>
+          </div>
+        </div>
+        <div class="reset">
+          <h2>Reset All</h2>
+        </div>
+      </div>
+    </div>
+    <!-- end settings -->
     <!-- start header  -->
-    <section class="header">
+    <section class="header headroom" id="header">
         <div class="container">
         <div class="logo">
             <a href="#">Elzero</a>
@@ -56,14 +85,14 @@
     </section>
     <!-- end header  -->
     <!-- start landing  -->
-    <section class="landing">
+    <section class="landing" id="landing">
         <div class="container">
             <div class="text">
                 <h1>Welcome, To Elzero World</h1>
                 <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
             </div>
             <div class="pic">
-                <img src="images/landing-image.png" alt="">
+                <img src="images/landing-1.png" alt="">
             </div>
             <a href="#articles"><i class="fas fa-angle-double-down fa-2x"></i></a>
         </div>
@@ -535,19 +564,19 @@
           <div class="stats">
             <div class="Html">
             <h3>HTML</h3>
-            <div class="total"><span style="width: 80%" data-progress="90%"></span></div>
+            <div class="total"><span  data-progress="90%"></span></div>
             </div>
             <div class="Css">
             <h3>CSS</h3>
-            <div class="total"><span style="width: 85%" data-progress="85%"></span></div>
+            <div class="total"><span  data-progress="85%"></span></div>
             </div>
             <div class="JavaScript">
             <h3>JavaScript</h3>
-            <div class="total"><span style="width: 70%" data-progress="70%"></span></div>
+            <div class="total"><span  data-progress="70%"></span></div>
             </div>
             <div class="Pythoh">
             <h3>Python</h3>
-            <div class="total"><span style="width: 80%" data-progress="80%"></span></div>
+            <div class="total"><span  data-progress="80%"></span></div>
             </div>
           </div>
         </div>
@@ -605,24 +634,24 @@
           <div class="info">
           <div class="decrement">
             <div class="item">
-              <div class="number">162</div>
+              <div class="number" id="Days">162</div>
               <div class="type">Days</div>
             </div>
             <div class="item">
-              <div class="number">09</div>
+              <div class="number" id="Hours">09</div>
               <div class="type">Hours</div>
             </div>
             <div class="item">
-              <div class="number">46</div>
+              <div class="number" id="Minutes">46</div>
               <div class="type">Minutes</div>
             </div>
             <div class="item">
-              <div class="number">03</div>
+              <div class="number" id="Seconds">03</div>
               <div class="type">Seconds</div>
             </div>
           </div>
           <div class="text">
-            <h1>Tech Masters Event 2021</h1>
+            <h1>Tech Masters Event 2022</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, doloremque? Illo nulla rerum autem, et modi vel adipisci non eligendi aspernatur veritatis voluptatem quasi repellendus.</p>
           </div>
           </div>
@@ -741,7 +770,7 @@
     </section>
     <!-- end videos  -->
     <!-- start stats  -->
-    <section class="statists padding" id="statists">
+    <section class="statists" id="statists">
       <div class="container">
         <div class="section-title">
           <h1>our awesome stats</h1>
@@ -848,5 +877,29 @@
       </div>
     </section>
     <!-- end footer  -->
+    <div class="overlay">
+        <div class="img-box">
+          <span>X</span>
+          <img src="" alt="">
+        </div>
+      </div>
+      <ul class="options">
+        <li data-content="Landing" data-id="header" class="active"></li>
+        <li data-content="Articles" data-id="articles"></li>
+        <li data-content="Gallery" data-id="gallery" ></li>
+        <li data-content="Features" data-id="features"></li>
+        <li data-content="Testinomials" data-id="tests"></li>
+        <li data-content="Team Members" data-id="team"></li>
+        <li data-content="Services" data-id="services"></li>
+        <li data-content="Our Skills" data-id="skills"></li>
+        <li data-content="How it works?" data-id="work"></li>
+        <li data-content="Latest Events" data-id="events"></li>
+        <li data-content="Pricing Plans" data-id="pricing"></li>
+        <li data-content="Top Videos" data-id="videos"></li>
+        <li data-content="Our stats" data-id="statists"></li>
+        <li data-content="Discount" data-id="discount"></li>
+        <li data-content="Footer" data-id="footer"></li>
+      </ul>
+    <script src="js/main.js"></script>
   </body>
 </html>

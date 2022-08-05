@@ -508,7 +508,7 @@ a {
     padding-bottom: 5px !important;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .header .main-menu li a.main-link {
     font-size: 13px;
   }
